@@ -1,3 +1,10 @@
+// # 1 $  npm install -g expo-cli (expo yu global olarak bilgisayara kurariz [mac de sudo ile])
+// # 2 $  expo init projeismi (expo ile react native projesi olustururuz)
+// # 3 $ cd projeismi (proje klosorune gireriz)
+// # 4 $ expo start (projeyi local hostta baslatiriz)
+// # 5 $ telefona indirdigimiz expo app ile, bilgisayarda cikan karekodu okutup tel uzerinden canli olarak projeyi takip ederiz)
+
+
 // 1 import
 import React from 'react';
 import { View, Button, Image, Text, StyleSheet } from 'react-native';
