@@ -1,20 +1,25 @@
 import React from 'react'
-import { StyleSheet, Button, Text, View } from 'react-native'
+import { Title, Screen, Card } from '../components';
+import { StyleSheet, Button, View, } from 'react-native';
+import { Colors } from '../constants/Colors';
+
 
 const HomeScreen = ({ navigation }) => {
   return (
     <View>
-      <Text> Home Screen</Text>
-      <Button
-        onPress={() => navigation.navigate('Text')}
-        title='Text'
-        color='#6236ff' />
-      <Button
-        onPress={() => navigation.navigate('Settings')}
-        title='Settings'
-        color='#6236ff' />
-
-
+      <Card style={{ margin: 10, }}>
+        <Title style={{ color: Colors.primary }}>Home View </Title>
+      </Card>
+      <View>
+        <Button
+          onPress={() => navigation.navigate('Text')}
+          title='Text'
+          color={Colors.secondary} />
+        <Button
+          onPress={() => navigation.navigate('Settings')}
+          title='Settings'
+          color={Colors.secondary} />
+      </View>
     </View>
   )
 }

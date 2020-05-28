@@ -1,14 +1,17 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React from 'react';
+import { Title } from '../components';
+import { Screen } from '../components/Containers';
+import { StyleSheet, View } from 'react-native'
 
 const TextScreen = () => {
   return (
-    <View>
-      <Text>Text Screen</Text>
-    </View>
+    <Screen>
+      <Title>This is a Title</Title>
+    </Screen>
   )
 }
-
 export default TextScreen
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+
+})

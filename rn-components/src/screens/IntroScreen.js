@@ -1,5 +1,6 @@
 import React from 'react'
-import { StyleSheet, Image, Button, Text, View } from 'react-native'
+import { StyleSheet, Image, Button, Text, View } from 'react-native';
+import { Colors } from '../constants/Colors';
 
 const IntroScreen = ({ navigation }) => {
   return (
@@ -14,7 +15,7 @@ const IntroScreen = ({ navigation }) => {
       <Button
         onPress={() => navigation.navigate('Home')}
         title="Let's Start"
-        color='#6236ff' />
+        color={Colors.primary} />
     </View >
   )
 }
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   image: {
-    width: 350,
+    height: 250,
     resizeMode: 'contain',
     alignSelf: 'center',
   },
